@@ -1,0 +1,2 @@
+2022-10-02T14:46:57.555+0800	ERROR	loggerStudy2/main.go:49	Error fetching url...	{"url": "www.baidu.com", "error": "Get \"www.baidu.com\": unsupported protocol scheme \"\""}
+2022-10-02T14:47:18.979+0800	ERROR	loggerStudy2/main.go:49	Error fetching url...	{"url": "http://www.google.com", "error": "Get \"http://www.google.com\": dial tcp 128.242.240.93:80: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}

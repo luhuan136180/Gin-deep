@@ -1,0 +1,12 @@
+2022-07-09T11:54:42.924+0800	debug	Trying to hit GET request for %swww.baidu.com
+2022-07-09T11:54:42.963+0800	error	Error fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-07-09T11:54:42.963+0800	debug	Trying to hit GET request for %shttps://www.baidu.com
+2022-07-09T11:54:43.408+0800	info	Success! statusCode = 200 OK for URL https://www.baidu.com
+2022-07-09T11:56:48.917+0800	debug	Trying to hit GET request for %swww.baidu.com
+2022-07-09T11:56:48.948+0800	error	Error fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-07-09T11:56:48.948+0800	debug	Trying to hit GET request for %shttps://www.baidu.com
+2022-07-09T11:56:49.350+0800	info	Success! statusCode = 200 OK for URL https://www.baidu.com
+2022-07-09T11:58:43.835+0800	debug	leearn-Zap/main.go:101	Trying to hit GET request for %swww.baidu.com
+2022-07-09T11:58:43.869+0800	error	leearn-Zap/main.go:104	Error fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-07-09T11:58:43.869+0800	debug	leearn-Zap/main.go:101	Trying to hit GET request for %shttps://www.baidu.com
+2022-07-09T11:58:44.277+0800	info	leearn-Zap/main.go:106	Success! statusCode = 200 OK for URL https://www.baidu.com

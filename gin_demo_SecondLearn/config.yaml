@@ -1,0 +1,7 @@
+part: 8081
+version: "v0.0.2"
+
+mysql:
+  host: "127.0.0.1"
+  part: 13306
+  dbname: "sql_demo"
