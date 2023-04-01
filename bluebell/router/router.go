@@ -4,6 +4,7 @@ import (
 	"bluebell/controller"
 	"bluebell/logger"
 	"bluebell/middleWares"
+	"github.com/gin-contrib/pprof"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
@@ -15,6 +16,7 @@ func SetUpRouter(mode string) *gin.Engine {
 	} //不然就是调试模式
 	r := gin.New()
 	//使用自己编写的logger
+	//r.Use(logger.GinLogger(), logger.GinRecovery(true), middleWares.RateLimitMiddleware(2*time.Second, 1))
 	r.Use(logger.GinLogger(), logger.GinRecovery(true))
 
 	//路由信息
@@ -40,6 +42,7 @@ func SetUpRouter(mode string) *gin.Engine {
 
 		v1.POST("/vote", controller.PostVoteController)
 	}
+	pprof.Register(r)
 
 	r.NoRoute(func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{"msg": "404"})
